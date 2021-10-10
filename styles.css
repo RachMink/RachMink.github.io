@@ -12,8 +12,7 @@ html , body{
     margin-top:10px;
     text-align: center;
     list-style-type: none;
-    font-size: large;
-    font-weight: 5vw;
+    /* font-weight: 5vw; */
     background-color: white;
     /* position: sticky; */
 
@@ -46,7 +45,7 @@ html , body{
 }
 
 .col-md-2 li{
-    font-size: 10px;
+    font-size: 8px;
     font-weight: 100;
     letter-spacing: 2px;
     padding: 10px;
