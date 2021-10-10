@@ -13,22 +13,22 @@
     <div id="navbar">
         <div class="container1-fluid no-gutters">
             <ul>
-                <div class="row g-3 ">
-                    <div class="col-3" id="logo"> Rachel <br> Minkowitz</div>
-                    <div class="col">
+                <div class="row g-3">
+                    <div class="col-6 col-md-2 col-lg-2" id="logo"> Rachel <br> Minkowitz</div>
+                    <div class="col-6 col-md-2 col-lg-2">
                         <li><a href="#home">Home</a></li>
                     </div>
-                    <div class="col">
-                        <li><a href="#aboutMe">About Me</a></li>
+                    <div class="col-6 col-md-2 col-lg-2">
+                        <li><a href="#aboutMe" >About Me</a></li>
                     </div>
-                    <div class="col">
-                        <li><a href="#projects">Projects</a></li>
+                    <div class="col-6 col-md-2 col-lg-2">
+                        <li><a href="#projects" >Projects</a></li>
                     </div>
-                    <div class="col">
-                        <li><a href="#gallery">Gallery</a></li>
+                    <div class="col-6 col-md-2 col-lg-2">
+                        <li><a href="#gallery" >Gallery</a></li>
                     </div>
-                    <div class="col">
-                        <li><a href="#contact">Contact</a></li>
+                    <div class="col-6 col-md-2 col-lg-2">
+                        <li><a href="#contact" >Contact</a></li>
                     </div>
                 </div>
             </ul>
@@ -43,13 +43,11 @@
 
     <div class="container2-fluid">
         <div class="row no-gutters">
-            <div id="topBanner">
-            </div>
+            <div id="topBanner"></div>
         </div>
     </div>
 
     <div class="container-fluid">
-
         <div id="home" class="row">
             <div id="quote" class="col-12">
                 <p>
@@ -72,21 +70,19 @@
                 <div class="col">
                 </div>
                 <div class="col-7">
-                    <img alt="pic of me" src="../img/ME.jpeg" id="me" class="meImage">
+                    <img alt="pic of me" src="../img/ME.jpeg" id="me" height="50%" width="50%" class="img-fluid float-right">
                     <p><b>Hey, I'm Rachel!</b> <br>
                         Welcome to my page!
                         Before exploring here's a few things you should know about me: I was born and bred in the Big
                         Apple which has me at a default of falling asleep to cars and honking. <br> When I’m not hacking
                         away at my computer you’ll likely find me obsessing over puppies, practicing boxing combos,
-                        hitting it up on the Tennis court with my sister or baking up a storm. <br>
-                        Here’s a little guide around my site: Home will get you back to where you came from. Within
-                        About Me is this awesome soliloquy. Moving on to Experiences you’ll find all my Computer science
-                        related projects which I’ve had fun working on including certifications/work experiences I have
-                        had in the past. Under the gallery you’ll find some of the things I love which are not tech
-                        related, including (but not limited to :)) travel, art, fashion design, and an awesome picture
-                        of me- be sure to look out for the captions. The last stop is Contact information - which I
-                        think I can leave to some self-interpretation…
-                        I'm a tech gal aspiring for change.</p>
+                        hitting it up on the Tennis court with my sister or baking up a storm. <br> 
+                        Currently I am finishing up my Bachelors in Computer Science at CUNY Brooklyn College.<br>
+                        Here’s a little guide around my site: <a href="#home" style="color:hotpink">Home</a> will get you back to where you came from.
+                        <a href="#aboutMe" style="color:purple">About Me</a> is where you are right now. Moving into <a href="#projects" style="color: rgb(6, 201, 201)">projects</a>, this is where you’ll find some of my programming 
+                        creations which I’ve had fun working on. Within <a href="#gallery" style="color:blue">gallery</a> you’ll find some non-tech related things I love, including (but not limited to :)) 
+                        travel, art, fashion design, and of course fury friends- be sure to look out for the captions. The last stop on this site is my <a href="#contact" style="color:orangered">contact info</a> which 
+                        includes my linkedIn information and email. Feel free to reach out to hear more about me and my goals. Overall, I'm a tech gal aspiring to make a difference through hope, technology, love and positivity.</p>
 
                 </div>
                 <div class="col">
@@ -107,25 +103,23 @@
                 <div class="row" id="avagadro">
                     <div class="col"></div>
                     <div class="col-8">
-                    <img alt="chemistry meme" src="../img/chemMeme.jpeg" id="chemMeme" class="chemImage">
-                    <H3> Avagadro's Calculator</H3>
+                    <img alt="chemistry meme" src="../img/chemMeme.jpeg" id="chemMeme" height="50%" width="40%" class="img-fluid float-right">
+                    <H3> <a target="_blank" rel="noopener noreferrer" href="https://github.com/RachMink/AvagadroCalculator" class="link"> Avagadro's Calculator </a></H3>
                     <h4>Date: 12-01-2020</h4>
                     <article>
                         This Java program allows a user to input a molecular formula and calculates the weight in grams of one mole of that molecule. 
                         A mole of a substance, also known as "Avagadro's Number", is defined as containing exactly 6.02×10<sup>23</sup> particles of that substance. 
                         Since an element's atomic weight is equal to the number of grams in one mole of that substance we can utilize the specific atomic weight of an element, multiplied by its coefficient (the amount of an element in one molecule) 
-                        in order to determine the total mass which is equivelent to the grams per mole of that element. 
+                        in order to determine the total mass aka grams per mole of that element. 
+                        <br><br>
                         To accomplish this calculation I begin by parsing the 
                         user's input to determine each element and it's coefficient. Once we understand which element we are looking for, and the 
                         amount of that element we are able to search for the atomic weight in our psuedo periodic table of elements and
                         calculate the proper weight. <br><br>
-                        This program uses various methods, some which are called within other 
-                        methods, while others are only called in the main method. In this program I need to sort the data file provided in alphabetic order, this file includes 
-                        atomic symbols and their corresponding atomic weights. I used the bubble sort method which although may not be the most 
-                        efficient, was used for pedigogy reasons. I also use the binary search method to search for the Atomic symbol/weight pair. 
-                        The actual calculation includes various if-else statements to find the exact element symbol and coefficient pair. 
-                        <br><br>
-                        A snippet of the logic used to parding and searching to complete the calculation:
+                        This program uses a top-down programming approach in order to implement parsing, a bubble sort ( which although may not be the most 
+                        efficient, was used for pedigogy reasons), and binary search.
+                        <!-- <br><br> -->
+                        <!-- A snippet of the logic used to parsing and searching to complete the calculation:
                         If the character that was parsed is an uppercase 
                         letter then we know that we have a new Element and must check if there is another 
                         character after. then the method checks if this character is either a lower case letter, 
@@ -153,8 +147,7 @@
                         in the string is read and accounted for. The method finally returns 'total' to the
                         main. A message is printed which reads - for a certain molecular formula grams per
                         mole is the 'total'. The user is prompted again and the scanner waits for the user
-                        to input another formula. 
-                        
+                        to input another formula.  -6 col-md-2 -->
                     </article>
                     </div>
                     <div class="col"></div>
@@ -167,16 +160,18 @@
                     <div class="col-4" id="s4"></div>
                     <div class="col"></div>
                 </div>
-                <br>
+                <!-- <br> -->
 
                 <div class="row" id="avagadro">
                     <div class="col"></div>
                     <div class="col-8">
-                        <img alt="OOP meme" src="../img/oopMeme.jpeg" id="oopMeme" class="oopImage">
-                        <h2>Bank System</h2>
+                        <img alt="OOP meme" src="../img/oopMeme.jpeg" id="oopMeme" height="60%" width="60%" class="img-fluid float-left">
+                        <h3> <a target="_blank" rel="noopener noreferrer" href="https://github.com/RachMink/Banking-System" class="link">Banking System</a></h3>
                         <h4>Date: 04-2021</h4>
                         <article>
-                            This Java program uses Object Oriented Programming methods to create a Bank System that can function in the real world 
+                            The goal of this project was to create and maintain a Java program mimicing a real world banking system using Object Oriented Programming practices, a few data structures and exception handling.
+                            <br> <br> This bank system is based on classes to create different types of bank accounts including Savings accounts and Checking accounts, while including class methods to close bank accounts, deposit money, withdraw money and perform various other transactions whilst checking for errors. 
+                            <br> <br> Although this program cannot be used in real life it allowed me to practice polymorphism, abstraction and inheritance in OOP. 
                         </article>
                     </div>
                     <div class="col"></div>
@@ -188,97 +183,89 @@
                     <div class="col-4" id="s4"></div>
                     <div class="col"></div>
                 </div>
-                <br>
+                <!-- <br> -->
                 <div class="row" id="avagadro">
                     <div class="col"></div>
                     <div class="col-8">
-                        <img src="../img/tree.jpeg" alt="family tree meme" id="familyTree" class="familyTreeMeme">
-                        <h2>Family Tree</h2>
+                        <img src="../img/tree.jpeg" alt="family tree meme" id="familyTree" height="50%" width="40%" class="img-fluid float-right">
+                        <h3> <a target="_blank" rel="noopener noreferrer" href="https://github.com/RachMink/Family-Tree" class="link">Family Tree</a></h3>
                         <h4> Date: 07-2021</h4>
                         <article>
                             This Java program uses various data structures to arrange a family tree and answer questions regarding the lineage. 
-                            Although using a binary tree is pretty obvious, in order to store the data according to how it was arranged I needed to 
-                            use arrayList, array and map as well. 
-                            A snippet of the logic used to parding and searching to complete the calculation:
-                            If the character that was parsed is an uppercase 
-                            letter then we know that we have a new Element and must check if there is another 
-                            character after. then the method checks if this character is either a lower case letter, 
-                            an upper case letter or a number. If this next charater is a lower
-                            case letter then we know that atomic symbol is equal to the upper case letter and the 
-                            lower case letter together. Now, if there is another character after this in the 
-                            string, the program again checks if this is an Uppercase letter, or a number. If this is a digit 
-                            we know that the previous atomic symbol has a coefficient. We must remain aware that this coefficient can be two digits long 
-                            therefore we check yet the next character. If the next character is a digit then 
-                            the coefficient is the integer value of the last two digits. 
-                            If this character is not a digit or there is no other character in this string then 
-                            the coefficient is the integer value of just the previous number. Sticking with the Upper+Lowercase 
-                            scenario if there was no additional chracter after the second letter then the coefficient is 
-                            automatically 1. Now, if the second character overall was not a lower case letter there are only two other 
-                            options- it could either be another uppercase letter or a digit. If the second character is a digit we know
-                            that foresure the first character is the atomic symbol and the second character is the coefficient or the first number
-                            of the coefficient. If there is yet another character in this string and this next character is another digit, then we 
-                            understand the coefficient to be the second and third numbers.
-                            As each of these statement are satisfied the elements "jump" out of the
-                            if statements with their coefficient and element symbol we use a binary search to find 
-                            the proper element and return it's corresponding weight. As long as the element is found, its weight 
-                            is returned, otherwise 0 is returned. We use the value of the atomic mass multiplied by the 
-                            integer value of the coefficient, and add that to the running total of the mass. 
-                            This total is accumulated as i increments and every character 
-                            in the string is read and accounted for. The method finally returns 'total' to the
-                            main. A message is printed which reads - for a certain molecular formula grams per
-                            mole is the 'total'. The user is prompted again and the scanner waits for the user
-                            to input another formula. 
-
+                            Although using a binary tree is pretty obvious, in order to store the data according to how it was arranged in the input file I used additional  
+                            arrayLists, and Queues. 
+                            <br><br>
+                            This program was the first program I had written using a binary tree, and being that the subject (family tree) was relevant to the 
+                            project goal (implementing a binary tree) I needed to creatively think how to store the data accurately in terms of sibling and parent 
+                            relationships within a binary tree which only hold two children per parent. Using queues which use first in first out logic (FIFO) allowed me to arrange
+                            siblings and their children. 
+                            <br><br>
+                            After actually arranging the tree, this program answers questions regarding the family - such as "Who is the youngest child of x?" and "Who is the father of y?"
                         </article>
                     </div>
                     <div class="col"></div>
                 </div>
 
-                <br>
+                <!-- <br> -->
                 <div class="row">
                     <div class="col"></div>
                     <div class="col-4" id="s4"></div>
                     <div class="col"></div>
                 </div>
-                <br>
+                <!-- <br> -->
 
                 <div class="row" id="avagadro">
                     <div class="col"></div>
                     <div class="col-8">
-                        <h2>Data Organizing</h2>
-                        <h4>Date: 08-2021</h4>
+                        <img src="../img/dataMeme.jpeg" alt="data analysis Meme" height="60%" width="50%" class="img-fluid float-left" style="margin-right: 10px ; margin-bottom:20px">
+                        <h3> <a target="_blank" rel="noopener noreferrer" href="https://github.com/RachMink/AWK-data-analysis" class="link">Data Organization</a></h3>
+                        <h4> Date: 08-2021</h4>
                         <article>
-                            This script as created to input data blah blah 
+                            This project uses a shell script written in AWK to download and analyze data from a CSV storing data logged about NY's discharged inmates in 2018.
+                            <br><br> My analysis includes the amount of prisoners discharged based on age, and gender, a calculated average age of the discharged prisoners while all This
+                            data is printed to a new file. 
                         </article>
                     </div>
                     <div class="col"></div>
                 </div>
 
-                <br>
+                <!-- <br> -->
                 <div class="row">
                     <div class="col"></div>
                     <div class="col-4" id="s4"></div>
                     <div class="col"></div>
                 </div>
-                <br>
+                <!-- <br> -->
 
                 <div class="row" id="avagadro">
                     <div class="col"></div>
                     <div class="col-8">
-                        <h2>This Website</h2>
+                        <img alt="CSS gif" src="../img/giphy-3.gif" height="60%" width="50%" class="img-fluid float-right">
+                        <h3> <a target="_blank" href="https://github.com/RachMink/RachMink.github.io/tree/main" class="link">My Portfolio Website (this website) </a></h3>
                         <article>
-                            Check out the code for this website. Rather than going the Wix/Squarespace route I decide 
-                            to create this website from scratch usinh HTML, CSS and Bootstrap Framework
+                            Here you can check out the code for this website. Rather than creating this webiste through Wix, Squarespace etc. I decide 
+                            to build this responsive webpage from scratch using HTML, CSS and the Bootstrap toolkit. I found the design and creation of this site 
+                            a fun process which encouraged attention to detail and flexibility.
                         </article>
                     </div>
                     <div class="col"></div>
                 </div>
 
                 <div class="row">
-                    <div class="col">
-                        <a target="_blank" href="https://github.com/RachMink"> <img alt="github icon"
-                                src="../img/GitHub-Mark-64px.png"></a>
+                    <div class="col"></div>
+                    <div class="col-4" id="s4"></div>
+                    <div class="col"></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-4"></div>
+                    
+                    <div class="col-4 d-flex justify-content-center">
+                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/RachMink?tab=repositories"> <img alt="github icon"
+                                src="../img/GitHub-Mark-64px.png" class="gitIcon" height="40%" width="20%"></a>
                     </div>
+                    
+                    <div class="col-4"></div>
                 </div>
 
             </div>
@@ -328,7 +315,6 @@
                         <div class="imgTitle">
                             Butterfly Gloves
                         </div>
-                        <p class="imgDescription"> The gloves reminded me of flying butterflies (which if you've noticed I fancy.) </p>
                     </div>
                     </div>
                 </figure>
@@ -462,18 +448,22 @@
                 <div class="col"></div>
             </div>
 
-            <div id="contact" class="row">
-                <div class="col"></div>
-                <div class="col"> 
-                    Phone: 718-710-7115 <br>
-                    Email: rhminkowitz@gmail.com
+            <div id="contact" class="row justify-content-end">
+                <div class="col-2"></div>
+                <div class="col-4 text-left"> 
+                    <a href = "mailto:rhminkowitz@gmail.com" id="email">Email: rhminkowitz@gmail.com</a>
                 </div>
-                <div class="col">
-                    <a target="_blank" class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/rachelhminkowitz?trk=profile-badge"><img src="../img/LI-In-Bug.png" alt="linked In icon" height="70%" width="10%"></a>
+                <div class="col-4 text-right">
                     
+                    <a target="_blank" class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/rachelhminkowitz?trk=profile-badge"><img src="../img/LI-In-Bug.png" alt="linked In icon" class="icon"></a>
+                    &nbsp; &nbsp;
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/RachMink?tab=repositories"> <img alt="github icon"
+                        src="../img/GitHub-Mark-64px.png" class="icon"></a>
                 </div>
+                <div class="col-2"></div>
                 
             </div>
+            <br>
         </div>
     </div>
 </body>
