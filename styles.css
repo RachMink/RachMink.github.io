@@ -55,7 +55,8 @@ html , body{
     background-position: center;
     background-repeat: no-repeat;
 }
-.col-lg-2 li{
+
+/* .col-lg-2 li{
     font-size: 35px;
     font-weight: 100;
     letter-spacing: 2px;
@@ -65,7 +66,7 @@ html , body{
     background-size: 80px;
     background-position: center;
     background-repeat: no-repeat;
-}
+} */
 
 
 .container1-fluid .col-6:hover{
@@ -182,7 +183,7 @@ a:hover{
     max-width: 100%;
 }
 
- .link:hover{
+.link:hover{
     color:rgb(245, 66, 135);
 }
 
@@ -263,7 +264,6 @@ figure{
     grid-row-start: 5;
     grid-row-end: 9;
 }
-
 
 .gallery__item--9 {
     grid-column-start: 6;
