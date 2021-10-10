@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rachel's Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" media="screen">
+</head>
+
+<body>
+    <div id="navbar">
+        <div class="container1-fluid no-gutters">
+            <ul>
+                <div class="row g-3 ">
+                    <div class="col-3" id="logo"> Rachel <br> Minkowitz</div>
+                    <div class="col">
+                        <li><a href="#home">Home</a></li>
+                    </div>
+                    <div class="col">
+                        <li><a href="#aboutMe">About Me</a></li>
+                    </div>
+                    <div class="col">
+                        <li><a href="#projects">Projects</a></li>
+                    </div>
+                    <div class="col">
+                        <li><a href="#gallery">Gallery</a></li>
+                    </div>
+                    <div class="col">
+                        <li><a href="#contact">Contact</a></li>
+                    </div>
+                </div>
+            </ul>
+        <div id="s1"></div>
+        <div id="s2"></div>
+        <div id="s3"></div>
+        </div>
+        
+    </div>
+
+    
+
+    <div class="container2-fluid">
+        <div class="row no-gutters">
+            <div id="topBanner">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+
+        <div id="home" class="row">
+            <div id="quote" class="col-12">
+                <p>
+                    "Your wings already exist, <br> all you have to do is fly." <br> -Unknown
+                </p>
+            </div>
+
+        </div>
+
+        <div class="block">
+
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-8" id="s4"></div>
+                <div class="col"></div>
+            </div>
+
+            <div id="aboutMe" class="row">
+
+                <div class="col">
+                </div>
+                <div class="col-7">
+                    <img alt="pic of me" src="../img/ME.jpeg" id="me" class="meImage">
+                    <p><b>Hey, I'm Rachel!</b> <br>
+                        Welcome to my page!
+                        Before exploring here's a few things you should know about me: I was born and bred in the Big
+                        Apple which has me at a default of falling asleep to cars and honking. <br> When I’m not hacking
+                        away at my computer you’ll likely find me obsessing over puppies, practicing boxing combos,
+                        hitting it up on the Tennis court with my sister or baking up a storm. <br>
+                        Here’s a little guide around my site: Home will get you back to where you came from. Within
+                        About Me is this awesome soliloquy. Moving on to Experiences you’ll find all my Computer science
+                        related projects which I’ve had fun working on including certifications/work experiences I have
+                        had in the past. Under the gallery you’ll find some of the things I love which are not tech
+                        related, including (but not limited to :)) travel, art, fashion design, and an awesome picture
+                        of me- be sure to look out for the captions. The last stop is Contact information - which I
+                        think I can leave to some self-interpretation…
+                        I'm a tech gal aspiring for change.</p>
+
+                </div>
+                <div class="col">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="block">
+
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-8" id="s4"></div>
+                <div class="col"></div>
+            </div>
+
+            <div id="projects">
+                <div class="row" id="avagadro">
+                    <div class="col"></div>
+                    <div class="col-8">
+                    <img alt="chemistry meme" src="../img/chemMeme.jpeg" id="chemMeme" class="chemImage">
+                    <H3> Avagadro's Calculator</H3>
+                    <h4>Date: 12-01-2020</h4>
+                    <article>
+                        This Java program allows a user to input a molecular formula and calculates the weight in grams of one mole of that molecule. 
+                        A mole of a substance, also known as "Avagadro's Number", is defined as containing exactly 6.02×10<sup>23</sup> particles of that substance. 
+                        Since an element's atomic weight is equal to the number of grams in one mole of that substance we can utilize the specific atomic weight of an element, multiplied by its coefficient (the amount of an element in one molecule) 
+                        in order to determine the total mass which is equivelent to the grams per mole of that element. 
+                        To accomplish this calculation I begin by parsing the 
+                        user's input to determine each element and it's coefficient. Once we understand which element we are looking for, and the 
+                        amount of that element we are able to search for the atomic weight in our psuedo periodic table of elements and
+                        calculate the proper weight. <br><br>
+                        This program uses various methods, some which are called within other 
+                        methods, while others are only called in the main method. In this program I need to sort the data file provided in alphabetic order, this file includes 
+                        atomic symbols and their corresponding atomic weights. I used the bubble sort method which although may not be the most 
+                        efficient, was used for pedigogy reasons. I also use the binary search method to search for the Atomic symbol/weight pair. 
+                        The actual calculation includes various if-else statements to find the exact element symbol and coefficient pair. 
+                        <br><br>
+                        A snippet of the logic used to parding and searching to complete the calculation:
+                        If the character that was parsed is an uppercase 
+                        letter then we know that we have a new Element and must check if there is another 
+                        character after. then the method checks if this character is either a lower case letter, 
+                        an upper case letter or a number. If this next charater is a lower
+                        case letter then we know that atomic symbol is equal to the upper case letter and the 
+                        lower case letter together. Now, if there is another character after this in the 
+                        string, the program again checks if this is an Uppercase letter, or a number. If this is a digit 
+                        we know that the previous atomic symbol has a coefficient. We must remain aware that this coefficient can be two digits long 
+                        therefore we check yet the next character. If the next character is a digit then 
+                        the coefficient is the integer value of the last two digits. 
+                        If this character is not a digit or there is no other character in this string then 
+                        the coefficient is the integer value of just the previous number. Sticking with the Upper+Lowercase 
+                        scenario if there was no additional chracter after the second letter then the coefficient is 
+                        automatically 1. Now, if the second character overall was not a lower case letter there are only two other 
+                        options- it could either be another uppercase letter or a digit. If the second character is a digit we know
+                        that foresure the first character is the atomic symbol and the second character is the coefficient or the first number
+                        of the coefficient. If there is yet another character in this string and this next character is another digit, then we 
+                        understand the coefficient to be the second and third numbers.
+                        As each of these statement are satisfied the elements "jump" out of the
+                        if statements with their coefficient and element symbol we use a binary search to find 
+                        the proper element and return it's corresponding weight. As long as the element is found, its weight 
+                        is returned, otherwise 0 is returned. We use the value of the atomic mass multiplied by the 
+                        integer value of the coefficient, and add that to the running total of the mass. 
+                        This total is accumulated as i increments and every character 
+                        in the string is read and accounted for. The method finally returns 'total' to the
+                        main. A message is printed which reads - for a certain molecular formula grams per
+                        mole is the 'total'. The user is prompted again and the scanner waits for the user
+                        to input another formula. 
+                        
+                    </article>
+                    </div>
+                    <div class="col"></div>
+                    
+                </div>
+
+                <br>
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col-4" id="s4"></div>
+                    <div class="col"></div>
+                </div>
+                <br>
+
+                <div class="row" id="avagadro">
+                    <div class="col"></div>
+                    <div class="col-8">
+                        <img alt="OOP meme" src="../img/oopMeme.jpeg" id="oopMeme" class="oopImage">
+                        <h2>Bank System</h2>
+                        <h4>Date: 04-2021</h4>
+                        <article>
+                            This Java program uses Object Oriented Programming methods to create a Bank System that can function in the real world 
+                        </article>
+                    </div>
+                    <div class="col"></div>
+                </div>
+
+                <br>
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col-4" id="s4"></div>
+                    <div class="col"></div>
+                </div>
+                <br>
+                <div class="row" id="avagadro">
+                    <div class="col"></div>
+                    <div class="col-8">
+                        <img src="../img/tree.jpeg" alt="family tree meme" id="familyTree" class="familyTreeMeme">
+                        <h2>Family Tree</h2>
+                        <h4> Date: 07-2021</h4>
+                        <article>
+                            This Java program uses various data structures to arrange a family tree and answer questions regarding the lineage. 
+                            Although using a binary tree is pretty obvious, in order to store the data according to how it was arranged I needed to 
+                            use arrayList, array and map as well. 
+                            A snippet of the logic used to parding and searching to complete the calculation:
+                            If the character that was parsed is an uppercase 
+                            letter then we know that we have a new Element and must check if there is another 
+                            character after. then the method checks if this character is either a lower case letter, 
+                            an upper case letter or a number. If this next charater is a lower
+                            case letter then we know that atomic symbol is equal to the upper case letter and the 
+                            lower case letter together. Now, if there is another character after this in the 
+                            string, the program again checks if this is an Uppercase letter, or a number. If this is a digit 
+                            we know that the previous atomic symbol has a coefficient. We must remain aware that this coefficient can be two digits long 
+                            therefore we check yet the next character. If the next character is a digit then 
+                            the coefficient is the integer value of the last two digits. 
+                            If this character is not a digit or there is no other character in this string then 
+                            the coefficient is the integer value of just the previous number. Sticking with the Upper+Lowercase 
+                            scenario if there was no additional chracter after the second letter then the coefficient is 
+                            automatically 1. Now, if the second character overall was not a lower case letter there are only two other 
+                            options- it could either be another uppercase letter or a digit. If the second character is a digit we know
+                            that foresure the first character is the atomic symbol and the second character is the coefficient or the first number
+                            of the coefficient. If there is yet another character in this string and this next character is another digit, then we 
+                            understand the coefficient to be the second and third numbers.
+                            As each of these statement are satisfied the elements "jump" out of the
+                            if statements with their coefficient and element symbol we use a binary search to find 
+                            the proper element and return it's corresponding weight. As long as the element is found, its weight 
+                            is returned, otherwise 0 is returned. We use the value of the atomic mass multiplied by the 
+                            integer value of the coefficient, and add that to the running total of the mass. 
+                            This total is accumulated as i increments and every character 
+                            in the string is read and accounted for. The method finally returns 'total' to the
+                            main. A message is printed which reads - for a certain molecular formula grams per
+                            mole is the 'total'. The user is prompted again and the scanner waits for the user
+                            to input another formula. 
+
+                        </article>
+                    </div>
+                    <div class="col"></div>
+                </div>
+
+                <br>
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col-4" id="s4"></div>
+                    <div class="col"></div>
+                </div>
+                <br>
+
+                <div class="row" id="avagadro">
+                    <div class="col"></div>
+                    <div class="col-8">
+                        <h2>Data Organizing</h2>
+                        <h4>Date: 08-2021</h4>
+                        <article>
+                            This script as created to input data blah blah 
+                        </article>
+                    </div>
+                    <div class="col"></div>
+                </div>
+
+                <br>
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col-4" id="s4"></div>
+                    <div class="col"></div>
+                </div>
+                <br>
+
+                <div class="row" id="avagadro">
+                    <div class="col"></div>
+                    <div class="col-8">
+                        <h2>This Website</h2>
+                        <article>
+                            Check out the code for this website. Rather than going the Wix/Squarespace route I decide 
+                            to create this website from scratch usinh HTML, CSS and Bootstrap Framework
+                        </article>
+                    </div>
+                    <div class="col"></div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <a target="_blank" href="https://github.com/RachMink"> <img alt="github icon"
+                                src="../img/GitHub-Mark-64px.png"></a>
+                    </div>
+                </div>
+
+            </div>
+
+            
+        </div>
+
+        <div class="block">
+
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-8" id="s4"></div>
+                <div class="col"></div>
+            </div>
+
+            <div id="gallery">
+                <figure class="gallery__item gallery__item--1">
+                    <div class="image">
+                        <img alt="3 girls" src="../img/Three Gals.png" class="img-responsive" width="100%">
+                        <div class="imgOverlay">
+                            <div class="imgTitle">
+                                African Inspired Fashion Sketches
+                            </div>
+                            <p class="imgDescription"> These fashion ideas were drawn during my time at FIT pre-college
+                                programs. I created and used this mood board as inspo --> </p>
+                        </div>
+                    </div>
+                </figure>
+
+                <figure class="gallery__item gallery__item--2">
+                    <div class="image">
+                    <img alt="African Mood Board" src="../img/Africa Mood Board.png" class="img-responsive"
+                        width="100%">
+                        <div class="imgOverlay">
+                            <div class="imgTitle">
+                                African Inspired Mood Board
+                            </div>
+                            <p class="imgDescription"> this mood board was created from various materials including magazines, label scraps and paint samples </p>
+                        </div>
+                    </div>
+                </figure>
+
+                <figure class="gallery__item gallery__item--3">
+                    <div class="image">
+                    <img alt="gloves pic" src="../img/gloves.jpeg" class="img-responsive" width="100%">
+                    <div class="imgOverlay">
+                        <div class="imgTitle">
+                            Butterfly Gloves
+                        </div>
+                        <p class="imgDescription"> The gloves reminded me of flying butterflies (which if you've noticed I fancy.) </p>
+                    </div>
+                    </div>
+                </figure>
+
+                <figure class="gallery__item gallery__item--4">
+                    <div class="image">
+                        <img alt="girl wishing on flower" src="../img/IMG_1863.jpg" class="img-responsive" width="100%">
+                        <div class="imgOverlay">
+                            <div class="imgTitle">
+                                Street Art
+                            </div>
+                            <p class="imgDescription"> this Banksy inspired girl to me is a sign of dreams and wishes</p>
+                        </div>
+                    </div>
+                </figure>
+
+                <figure class="gallery__item gallery__item--5">
+                    <div class="image">
+                    <img alt="yum cupcake" src="../img/cupcake.jpg" class="img-responsive" width="100%">
+                    <div class="imgOverlay">
+                        <div class="imgTitle">
+                            Mmm.
+                        </div>
+                    </div>
+                </div>
+                </figure>
+
+                <figure class="gallery__item gallery__item--6">
+                    <div class="image">
+                    <img alt="process model" src="../img/process model.png" class="img-responsive" width="100%">
+                    <div class="imgOverlay">
+                        <div class="imgTitle">
+                            The Fashion Sketch Process
+                        </div>
+                        <p class="imgDescription"> 1. find inspo <br> 2. raw sketch <br> 3. sketch + color </p>
+                    </div> 
+                </div>
+                </figure>
+
+                <figure class="gallery__item gallery__item--7">
+                    <div class="image">
+                    <img alt="Van Gough Quote" src="../img/VanGoughQuote.JPG" class="img-responsive" height="100%" width="100%">
+                    <div class="imgOverlay">
+                        <div class="imgTitle">
+                             - Vincent Van Gough
+                        </div>
+                        <p class="imgDescription"> The painter was known to dream and create </p>
+                    </div> 
+                </div>
+                </figure>
+
+                <figure class="gallery__item gallery__item--9">
+                    <div class="image">
+                    <img alt="fashion sketch" src="../img/fashun-sketch.png" class="img-responsive" width="100%">
+                    <div class="imgOverlay">
+                        <div class="imgTitle">
+                            jusT preTTy.
+                        </div>
+                    </div> 
+                </div>
+                </figure>
+
+                <figure class="gallery__item gallery__item--10">
+                <div class="image">
+                    <img alt="collage about me" src="../img/Me Collage.png" class="img-responsive" width="100%">
+                    <div class="imgOverlay">
+                        <div class="imgTitle">
+                          XOXOXO
+                        </div>
+                        <p class="imgDescription"> Sometimes you just want a pop of color. When I created this collage I 
+                              </p>
+                    </div> 
+                </div>
+                </figure>
+
+                <figure class="gallery__item gallery__item--11">
+                    <div class="image">
+                    <img alt="hands make Heart" src="../img/handHeart.jpg" class="img-responsive" width="100%">
+                    <div class="imgOverlay">
+                        <div class="imgTitle">
+                          Love makes the world go 'round 
+                        </div>
+                        <p class="imgDescription"> or shall I say "the sun rise"...
+                              </p>
+                    </div> 
+                </div>
+                </figure>
+
+                <figure class="gallery__item gallery__item--12">
+                    <div class="image">
+                    <img alt="ski Mask" src="../img/skiMask.jpg" class="img-responsive" width="100%">
+                    <div class="imgOverlay">
+                        <div class="imgTitle">
+                          adventure
+                        </div>
+                    </div> 
+                </div>
+                </figure>
+
+                <figure class="gallery__item gallery__item--13">
+                    <div class="image">
+                    <img alt="doggy" src="../img/doggy.jpg" class="img-responsive" width="100%" height="100%">
+                    <div class="imgOverlay">
+                        <div class="imgTitle">
+                          this face 
+                        </div>
+                    </div> 
+                </div>
+                </figure>
+
+                <figure class="gallery__item gallery__item--14">
+                    <div class="image">
+                    <img alt="mtRange" src="../img/mtRange.jpg" class="img-responsive" width="100%">
+                    <div class="imgOverlay">
+                        <div class="imgTitle">
+                            #Vuze
+                        </div>
+                        <p class="imgDescription"> Clear spring Utah skies </p>
+                    </div> 
+                </div>
+                </figure>
+
+            </div>
+
+        </div>
+
+        <div class="block">
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-8" id="s4"></div>
+                <div class="col"></div>
+            </div>
+
+            <div id="contact" class="row">
+                <div class="col"></div>
+                <div class="col"> 
+                    Phone: 718-710-7115 <br>
+                    Email: rhminkowitz@gmail.com
+                </div>
+                <div class="col">
+                    <a target="_blank" class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/rachelhminkowitz?trk=profile-badge"><img src="../img/LI-In-Bug.png" alt="linked In icon" height="70%" width="10%"></a>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
