@@ -11,12 +11,11 @@ html , body{
 #navbar{
     margin:0;
     display: inline;
-    font-size: large;
+    /* font-size: large; */
     /* margin-top:10px; */
     text-align: center;
     list-style-type: none;
     font-weight: 5em;
-    font-size: large;
 
 } 
 
@@ -47,7 +46,7 @@ html , body{
 } */
 
 li{
-    font-size: 5px;
+    font-size: 35px;
     font-weight: 90;
     letter-spacing: 1px;
     padding: 20px;
