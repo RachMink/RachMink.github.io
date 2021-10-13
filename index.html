@@ -4,45 +4,61 @@
 <head>
     <title>Rachel's Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> -->
+   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css" media="screen">
+   <link rel="stylesheet" href="styles.css" media="screen">
+
+
+<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
 </head>
 
 <body>
-    <nav>
-        <div class="container1-fluid no-gutters">
-            <ul>
-                <div class="row g-3">
-                    <div class="col-6 col-md-2" id="logo"> Rachel <br> Minkowitz</div>
-                    <div class="col-6 col-md-2">
-                        <li><a href="#home">Home</a></li>
-                    </div>
-                    <div class="col-6 col-md-2">
-                        <li><a href="#aboutMe">About Me</a></li>
-                    </div>
-                    <div class="col-6 col-md-2">
-                        <li><a href="#projects" >Projects</a></li>
-                    </div>
-                    <div class="col-6 col-md-2">
-                        <li><a href="#gallery" >Gallery</a></li>
-                    </div>
-                    <div class="col-6 col-md-2">
-                        <li><a href="#contact" >Contact</a></li>
-                    </div>
-                </div>
-            </ul>
-        <div id="s1"></div>
-        <div id="s2"></div>
-        <div id="s3"></div>
-        </div>
+
+
+<nav class="navbar navbar-expand-sm navbar-default fixed-top bg-color">
+        <div class="container-fluid" id="partOfNav">
+            <div class="navbar-header">
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         
-    </nav>
+                <img src="https://img.icons8.com/ios-filled/30/000000/butterfly.png" alt="butterfly"/>
+            </button>
+
+              <a class="navbar-brand" href="#home">Rachel<br>Minkowitz</a>
+            </div>
+            
+        
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="#aboutMe">About Me</a></li>
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="#projects" >Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#gallery" >Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact" >Contact</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link" href="#" ></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" ></a></li> -->
+            </ul> 
+            
+        </div>
+    
+
+</nav>
+
+
 
     
 
-    <div class="container2-fluid">
+    <div class="container1-fluid">
+
         <div class="row no-gutters">
+            <div id="s1"></div>
+            <div id="s2"></div>
+            <div id="s3"></div> 
             <div id="topBanner"></div>
         </div>
     </div>
@@ -51,7 +67,7 @@
         <div id="home" class="row">
             <div id="quote" class="col-12">
                 <p>
-                    "Your wings already exist, <br> all you have to do is <span style="color:hotpink">f</span><span style="color:red">l</span><span style="color:brown">y</span>." <br> -Unknown
+                    "Your wings already exist, <br> all you have to do is <span style="color:hotpink">fly</span>." <br> -Unknown
                 </p>
             </div>
 
@@ -70,8 +86,8 @@
                 <div class="col">
                 </div>
                 <div class="col-7">
-                    <img alt="pic of me" src="../img/ME.jpeg" id="me" height="50%" width="50%" class="img-fluid float-right">
-                    <p><b>Hey, I'm Rachel!</b> <br>
+                    <img alt="pic of me" src="../img/ME.jpeg" id="me" height="50%" width="50%" class="img-fluid float-right"  style="margin-left: 20px ; margin-bottom:10px">
+                    <p><strong>Hey, I'm Rachel!</strong> <br>
                         Welcome to my page!
                         Before exploring here's a few things you should know about me: I was born and bred in the Big
                         Apple which has me at a default of falling asleep to cars and honking. <br> When I’m not hacking
@@ -79,9 +95,9 @@
                         hitting it up on the Tennis court with my sister or baking up a storm. <br> 
                         Currently I am finishing up my Bachelors in Computer Science at CUNY Brooklyn College.<br>
                         Here’s a little guide around my site: <a href="#home" style="color:hotpink">Home</a> will get you back to where you came from.
-                        <a href="#aboutMe" style="color:purple">About Me</a> is where you are right now. Moving into <a href="#projects" style="color: rgb(6, 201, 201)">projects</a>, this is where you’ll find some of my programming 
-                        creations which I’ve had fun working on. Within <a href="#gallery" style="color:blue">gallery</a> you’ll find some non-tech related things I love, including (but not limited to :)) 
-                        travel, art, fashion design, and of course fury friends- be sure to look out for the captions. The last stop on this site is my <a href="#contact" style="color:orangered">contact info</a> which 
+                        <a href="#aboutMe" style="color:hotpink">About Me</a> is where you are right now. Moving into <a href="#projects" style="color: hotpink">projects</a>, this is where you’ll find some of my programming 
+                        creations which I’ve had fun working on. Within <a href="#gallery" style="color:hotpink">gallery</a> you’ll find some non-tech related things I love, including (but not limited to :)) 
+                        travel, art, fashion design, and of course fury friends- be sure to look out for the captions. The last stop on this site is my <a href="#contact" style="color:hotpink">contact info</a> which 
                         includes my linkedIn information and email. Feel free to reach out to hear more about me and my goals. Overall, I'm a tech gal aspiring to make a difference through hope, technology, love and positivity.</p>
 
                 </div>
@@ -103,8 +119,8 @@
                 <div class="row" id="avagadro">
                     <div class="col"></div>
                     <div class="col-8">
-                    <img alt="chemistry meme" src="../img/chemMeme.jpeg" id="chemMeme" height="50%" width="40%" class="img-fluid float-right">
-                    <H3> <a target="_blank" rel="noopener noreferrer" href="https://github.com/RachMink/AvagadroCalculator" class="link"> Avagadro's Calculator </a></H3>
+                    <img alt="chemistry meme" src="../img/chemMeme.jpeg" id="chemMeme" height="50%" width="50%" class="img-fluid float-right"  style="margin-left: 10px ; margin-bottom:10px">
+                    <H3> <a target="_blank" rel="noopener noreferrer" href="https://github.com/RachMink/AvagadroCalculator" class="link"> <strong>Avagadro's Calculator</strong></a></H3>
                     <h4>Date: 12-01-2020</h4>
                     <article>
                         This Java program allows a user to input a molecular formula and calculates the weight in grams of one mole of that molecule. 
@@ -118,36 +134,6 @@
                         calculate the proper weight. <br><br>
                         This program uses a top-down programming approach in order to implement parsing, a bubble sort ( which although may not be the most 
                         efficient, was used for pedigogy reasons), and binary search.
-                        <!-- <br><br> -->
-                        <!-- A snippet of the logic used to parsing and searching to complete the calculation:
-                        If the character that was parsed is an uppercase 
-                        letter then we know that we have a new Element and must check if there is another 
-                        character after. then the method checks if this character is either a lower case letter, 
-                        an upper case letter or a number. If this next charater is a lower
-                        case letter then we know that atomic symbol is equal to the upper case letter and the 
-                        lower case letter together. Now, if there is another character after this in the 
-                        string, the program again checks if this is an Uppercase letter, or a number. If this is a digit 
-                        we know that the previous atomic symbol has a coefficient. We must remain aware that this coefficient can be two digits long 
-                        therefore we check yet the next character. If the next character is a digit then 
-                        the coefficient is the integer value of the last two digits. 
-                        If this character is not a digit or there is no other character in this string then 
-                        the coefficient is the integer value of just the previous number. Sticking with the Upper+Lowercase 
-                        scenario if there was no additional chracter after the second letter then the coefficient is 
-                        automatically 1. Now, if the second character overall was not a lower case letter there are only two other 
-                        options- it could either be another uppercase letter or a digit. If the second character is a digit we know
-                        that foresure the first character is the atomic symbol and the second character is the coefficient or the first number
-                        of the coefficient. If there is yet another character in this string and this next character is another digit, then we 
-                        understand the coefficient to be the second and third numbers.
-                        As each of these statement are satisfied the elements "jump" out of the
-                        if statements with their coefficient and element symbol we use a binary search to find 
-                        the proper element and return it's corresponding weight. As long as the element is found, its weight 
-                        is returned, otherwise 0 is returned. We use the value of the atomic mass multiplied by the 
-                        integer value of the coefficient, and add that to the running total of the mass. 
-                        This total is accumulated as i increments and every character 
-                        in the string is read and accounted for. The method finally returns 'total' to the
-                        main. A message is printed which reads - for a certain molecular formula grams per
-                        mole is the 'total'. The user is prompted again and the scanner waits for the user
-                        to input another formula.  -6 col-md-2 -->
                     </article>
                     </div>
                     <div class="col"></div>
@@ -165,8 +151,8 @@
                 <div class="row" id="avagadro">
                     <div class="col"></div>
                     <div class="col-8">
-                        <img alt="OOP meme" src="../img/oopMeme.jpeg" id="oopMeme" height="60%" width="60%" class="img-fluid float-left">
-                        <h3> <a target="_blank" rel="noopener noreferrer" href="https://github.com/RachMink/Banking-System" class="link">Banking System</a></h3>
+                        <img alt="OOP meme" src="../img/oopMeme.jpeg" id="oopMeme" height="50%" width="50%" class="img-fluid float-left"  style="margin-right: 10px ; margin-bottom:10px">
+                        <h3> <a target="_blank" rel="noopener noreferrer" href="https://github.com/RachMink/Banking-System" class="link"><strong>Banking System</strong></a></h3>
                         <h4>Date: 04-2021</h4>
                         <article>
                             The goal of this project was to create and maintain a Java program mimicing a real world banking system using Object Oriented Programming practices, a few data structures and exception handling.
@@ -187,8 +173,8 @@
                 <div class="row" id="avagadro">
                     <div class="col"></div>
                     <div class="col-8">
-                        <img src="../img/tree.jpeg" alt="family tree meme" id="familyTree" height="50%" width="40%" class="img-fluid float-right">
-                        <h3> <a target="_blank" rel="noopener noreferrer" href="https://github.com/RachMink/Family-Tree" class="link">Family Tree</a></h3>
+                        <img src="../img/tree.jpeg" alt="family tree meme" id="familyTree" height="50%" width="50%" class="img-fluid float-right"  style="margin-left: 10px ; margin-bottom:10px">
+                        <h3> <a target="_blank" rel="noopener noreferrer" href="https://github.com/RachMink/Family-Tree" class="link"><strong>Family Tree</strong></a></h3>
                         <h4> Date: 07-2021</h4>
                         <article>
                             This Java program uses various data structures to arrange a family tree and answer questions regarding the lineage. 
@@ -217,8 +203,8 @@
                 <div class="row" id="avagadro">
                     <div class="col"></div>
                     <div class="col-8">
-                        <img src="../img/dataMeme.jpeg" alt="data analysis Meme" height="60%" width="50%" class="img-fluid float-left" style="margin-right: 10px ; margin-bottom:20px">
-                        <h3> <a target="_blank" rel="noopener noreferrer" href="https://github.com/RachMink/AWK-data-analysis" class="link">Data Organization</a></h3>
+                        <img src="../img/dataMeme.jpeg" alt="data analysis Meme" height="50%" width="50%" class="img-fluid float-left" style="margin-right: 10px ; margin-bottom:10px">
+                        <h3> <a target="_blank" rel="noopener noreferrer" href="https://github.com/RachMink/AWK-data-analysis" class="link"><strong>Data Organization</strong></a></h3>
                         <h4> Date: 08-2021</h4>
                         <article>
                             This project uses a shell script written in AWK to download and analyze data from a CSV storing data logged about NY's discharged inmates in 2018.
@@ -240,8 +226,8 @@
                 <div class="row" id="avagadro">
                     <div class="col"></div>
                     <div class="col-8">
-                        <img alt="CSS gif" src="../img/giphy-3.gif" height="60%" width="50%" class="img-fluid float-right">
-                        <h3> <a target="_blank" href="https://github.com/RachMink/RachMink.github.io/tree/main" class="link">My Portfolio Website (this website) </a></h3>
+                        <img alt="CSS gif" src="../img/giphy-3.gif" height="50%" width="50%" class="img-fluid float-right"  style="margin-left: 10px ; margin-bottom:10px">
+                        <h3> <a target="_blank" href="https://github.com/RachMink/RachMink.github.io/tree/main" class="link"><strong> Portfolio Website (this website) </strong></a></h3>
                         <article>
                             Here you can check out the code for this website. Rather than creating this webiste through Wix, Squarespace etc. I decide 
                             to build this responsive webpage from scratch using HTML, CSS and the Bootstrap toolkit. I found the design and creation of this site 
@@ -288,8 +274,8 @@
                             <div class="imgTitle">
                                 African Inspired Fashion Sketches
                             </div>
-                            <p class="imgDescription"> These fashion ideas were drawn during my time at FIT pre-college
-                                programs. I created and used this mood board as inspo --> </p>
+                            <p class="imgDescription"> These fashion ideas were drawn during my time at FIT. 
+                                I always start my design process with a mood board for inspo --> </p>
                         </div>
                     </div>
                 </figure>
@@ -300,9 +286,9 @@
                         width="100%">
                         <div class="imgOverlay">
                             <div class="imgTitle">
-                                African Inspired Mood Board
+                                West African Mood Board
                             </div>
-                            <p class="imgDescription"> this mood board was created from various materials including magazines, label scraps and paint samples </p>
+                            <p class="imgDescription"> created using various magazines, label scraps and paint samples </p>
                         </div>
                     </div>
                 </figure>
@@ -312,7 +298,7 @@
                     <img alt="gloves pic" src="../img/gloves.jpeg" class="img-responsive" width="100%">
                     <div class="imgOverlay">
                         <div class="imgTitle">
-                            Butterfly Gloves
+                            ???????????
                         </div>
                     </div>
                     </div>
@@ -323,9 +309,9 @@
                         <img alt="girl wishing on flower" src="../img/IMG_1863.jpg" class="img-responsive" width="100%">
                         <div class="imgOverlay">
                             <div class="imgTitle">
-                                Street Art
+                                Make a wish
                             </div>
-                            <p class="imgDescription"> this Banksy inspired girl to me is a sign of dreams and wishes</p>
+                            <p class="imgDescription"> Banksy inspired street art, hope can be made found anywhere.</p>
                         </div>
                     </div>
                 </figure>
@@ -346,9 +332,9 @@
                     <img alt="process model" src="../img/process model.png" class="img-responsive" width="100%">
                     <div class="imgOverlay">
                         <div class="imgTitle">
-                            The Fashion Sketch Process
+                            My Fashion Sketching Process
                         </div>
-                        <p class="imgDescription"> 1. find inspo <br> 2. raw sketch <br> 3. sketch + color </p>
+                        <p class="imgDescription"> 1. collect inspo <br> 2. dirty sketch <br> 3. color sketch </p>
                     </div> 
                 </div>
                 </figure>
@@ -358,10 +344,9 @@
                     <img alt="Van Gough Quote" src="../img/VanGoughQuote.JPG" class="img-responsive" height="100%" width="100%">
                     <div class="imgOverlay">
                         <div class="imgTitle">
-                             - Vincent Van Gough
+                             -- Vincent Van Gough
                         </div>
-                        <p class="imgDescription"> The painter was known to dream and create </p>
-                    </div> 
+                        <p class="imgDescription">dreaming a future is the first step to embarking on it</p>
                 </div>
                 </figure>
 
@@ -370,7 +355,7 @@
                     <img alt="fashion sketch" src="../img/fashun-sketch.png" class="img-responsive" width="100%">
                     <div class="imgOverlay">
                         <div class="imgTitle">
-                            jusT preTTy.
+                            coming together
                         </div>
                     </div> 
                 </div>
@@ -381,10 +366,9 @@
                     <img alt="collage about me" src="../img/Me Collage.png" class="img-responsive" width="100%">
                     <div class="imgOverlay">
                         <div class="imgTitle">
-                          XOXOXO
+                          When I say 'POP'
                         </div>
-                        <p class="imgDescription"> Sometimes you just want a pop of color. When I created this collage I 
-                              </p>
+                        <p class="imgDescription">Did someone say 'of color'?</p>
                     </div> 
                 </div>
                 </figure>
@@ -394,10 +378,9 @@
                     <img alt="hands make Heart" src="../img/handHeart.jpg" class="img-responsive" width="100%">
                     <div class="imgOverlay">
                         <div class="imgTitle">
-                          Love makes the world go 'round 
+                          Sun rises make the world go 'round 
                         </div>
-                        <p class="imgDescription"> or shall I say "the sun rise"...
-                              </p>
+                        <p class="imgDescription"> or is it love? <br> both? </p>
                     </div> 
                 </div>
                 </figure>
@@ -418,7 +401,7 @@
                     <img alt="doggy" src="../img/doggy.jpg" class="img-responsive" width="100%" height="100%">
                     <div class="imgOverlay">
                         <div class="imgTitle">
-                          this face 
+                          man's best friend 
                         </div>
                     </div> 
                 </div>
@@ -429,9 +412,8 @@
                     <img alt="mtRange" src="../img/mtRange.jpg" class="img-responsive" width="100%">
                     <div class="imgOverlay">
                         <div class="imgTitle">
-                            #Vuze
+                            #Views
                         </div>
-                        <p class="imgDescription"> Clear spring Utah skies </p>
                     </div> 
                 </div>
                 </figure>

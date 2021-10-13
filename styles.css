@@ -4,35 +4,29 @@ html , body{
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; 
-    scroll-padding-top: 37%;
+    /* overflow-x: hidden;  */
+    scroll-padding-top: 50%;
     font-size: .9vw;
 }
 
-nav{
+.navbar{
     margin:0;
-    display: inline;
-    /* font-size: large; */
-    /* margin-top:10px; */
+    border:0;
+    /* display: inline; */
     text-align: center;
-    list-style-type: none;
-    /* font-weight: 5em; */
-
-} 
+    /* list-style-type: none; */
+    /* width: 100%; */
+}  
 
 .block{
     background-color: white;
 }
 
-.container1-fluid {
-    padding-top: 20px;
-    position: sticky;
-    top:0;
-    width:100%;
-    background: white;
-    z-index: 1;
+/* .container-fluid {
     margin: 0 auto;
-} 
+    background: white;
+    margin: 0 auto;
+}  */
 
 /* .col-6 li{
     font-size: 4px;
@@ -51,30 +45,25 @@ li{
     font-weight: 90;
     letter-spacing: 1px;
     padding: 20px;
-    display: inline-block;
+    
     background-image: url("../img/butterfly.png");
     background-size: 60px;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-
-
-
-.container1-fluid .col-6:hover{
-    /* why's if there's a space between the .col :hover the navbar changes */
-    border:3px solid black;
-    background-color: rgb(245, 66, 135);
-    /* font-weight: bolder;  */
-   
-} 
-
-a{
-    height: 100%;
-    width:100%;
+.navbar-nav{
+    max-width:100%;
 }
 
-#logo{
+
+/* #partOfNav:hover{ 
+    border:3px solid black;
+    background-color: rgb(245, 66, 135);   
+}  */
+
+
+.navbar-brand{
     font-size: 2.3em;
     font-weight: 700;
     letter-spacing: 4px;
@@ -82,10 +71,9 @@ a{
     text-align: left;
     background-image: none;
     background-color: none;
-
 }
 
-#logo:hover{
+.navbar-brand :hover{
     border:none;
     color:black;
     background-color: white;
@@ -109,11 +97,24 @@ a:hover{
     color:black;
 
 }
+.bg-color{
+    background-color: white;
+    border-bottom: 2px solid black;
+}
+.bg-color:hover{
+    border: 1px solid black;
+    background-color: rgb(245, 66, 135);;
+}
 
-.container2-fluid{
+.container1-fluid{
     overflow-x: hidden; 
-    margin-left:-20px;
-    margin-right:-20px;
+    /* margin-left:-20px; */
+    /* margin-right:-20px; */
+}
+
+.navabr-collapse{
+    max-height: 0.9vh;
+    overflow-y: auto;
 }
 
 #topBanner{
@@ -139,17 +140,23 @@ a:hover{
     height: 20px;
     margin-top: 20px;
     margin-bottom:10px;
+    margin-left:-20px;
+    margin-right:-20px;
 }
 
 #s2{
     background-color: black;
     height: 10px;
     margin-bottom: 10px; 
+    margin-left:-20px;
+    margin-right:-20px;
 }
 
 #s3{
     background-color: black;
     height: 5px;
+    margin-left:-20px;
+    margin-right:-20px;
 }
 
 #s4{
@@ -171,7 +178,7 @@ a:hover{
 
 .img-fluid{
     margin-bottom: 0px;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     max-width: 100%;
 }
 
