@@ -63,7 +63,7 @@ li{
 }  */
 
 
-.navbar-brand{
+.navbar-header{
     font-size: 2.3em;
     font-weight: 700;
     letter-spacing: 4px;
@@ -73,11 +73,11 @@ li{
     background-color: none;
 }
 
-.navbar-brand :hover{
+/* .navbar-header :hover{
     border:none;
     color:black;
     background-color: white;
-} 
+}  */
 
 a{
     text-decoration: none;
@@ -105,7 +105,7 @@ a:hover{
 
 .bg-color:hover{
     border: 1px solid black;
-    background-color: rgb(245, 66, 135);;
+    background-color: rgb(245, 66, 135);
 }
 
 .container1-fluid{
@@ -114,19 +114,19 @@ a:hover{
     /* margin-right:-20px; */
 }
 
-.navabr-collapse{
+.navabar-collapse{
     max-height: 0.9vh;
     overflow-y: auto;
 }
 
-/* #topBanner{
+#topBanner{
     background-size: cover;
     background-image: url("../img/1482.jpg");
     background-repeat: none;
     background-position: bottom center;
     height:35vw;
     width:100%;
-} */
+}
 
 #quote{
     font-size: 4em;
