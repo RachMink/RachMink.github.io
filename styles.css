@@ -97,10 +97,12 @@ a:hover{
     color:black;
 
 }
+
 .bg-color{
     background-color: white;
     border-bottom: 2px solid black;
 }
+
 .bg-color:hover{
     border: 1px solid black;
     background-color: rgb(245, 66, 135);;
@@ -117,14 +119,14 @@ a:hover{
     overflow-y: auto;
 }
 
-#topBanner{
+/* #topBanner{
     background-size: cover;
     background-image: url("../img/1482.jpg");
     background-repeat: none;
     background-position: bottom center;
     height:35vw;
     width:100%;
-}
+} */
 
 #quote{
     font-size: 4em;
