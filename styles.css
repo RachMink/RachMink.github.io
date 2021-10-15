@@ -365,6 +365,10 @@ figure{
     margin:12%;
 }
 
+#email{
+    font-size: 1.5em;
+}
+
 #email:hover{
     text-decoration: underline;
 }
