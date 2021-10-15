@@ -5,7 +5,7 @@ html , body{
     margin: 0px;
     padding: 0px;
     /* overflow-x: hidden;  */
-    scroll-padding-top: 50%;
+    scroll-padding-top: 10%;
     font-size: .9vw;
 }
 
