@@ -193,6 +193,10 @@ a:hover{
 .link:hover{
     color:rgb(245, 66, 135);
 }
+.gitIcon{
+    width: 20%;
+    height: 40%;
+}
 
 .gitIcon:hover{
     transform: scale(1.3);
