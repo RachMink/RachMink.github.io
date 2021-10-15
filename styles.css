@@ -9,6 +9,11 @@ html , body{
     font-size: .9vw;
 }
 
+.container-fluid{
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
 .navbar{
     margin:0;
     border:0;
